@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Password request form</title>
+    <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+<div class="header"></div>
+<div class="main"></div>
+<div class="content">
+    <form name="google-form" method="post" action="" enctype="multipart/form-data">
+
+        <h1>Password request form</h1>
+        <p class="request-block-head">
+            После загрузки файлов и отправки формы данные, связанные с Вашим аккаунтом Google (имя и фотография), будут записаны. Вы не <strong>kirillzykov777@gmail.com</strong>? <a href="#"> Сменить аккаунт</a>
+        </p>
+        <p class="required-head">* Обязательно</p>
+
+        <div class="request-block">
+            <p class="request">Please fill your name <span class="required">*</span></p>
+            <label><input type="text" placeholder="Мой ответ" class="text"></label>
+        </div>
+
+        <div class="request-block">
+            <p class="request">What color you like <span class="required">*</span></p>
+            <label><input type="radio" name="colorGroup" value="Red" />Red</label><br>
+            <label><input type="radio" name="colorGroup" value="Green" />Green</label><br>
+            <label><input type="radio" name="colorGroup" value="Blue" />Blue</label><br>
+            <label><input type="radio" name="colorGroup" value="Black" />Black</label><br>
+            <label><input type="radio" name="colorGroup" value="White" />White</label><br>
+            <label><input type="radio" name="colorGroup" value="Другое:" />Другое:</label><input type="text" id="radio-text"><label for="radio-text"></label>
+        </div>
+
+
+        <div class="request-block">
+            <p class="request">What town you like more? <span class="required">*</span></p>
+            <select id="town">
+                <option value="Выбрать"disabled selected id="Выбрать">Выбрать</option>
+                <option value="Brest">Brest</option>
+                <option value="Minsk">Minsk</option>
+                <option value="Grodno">Grodno</option>
+                <option value="Mogilev">Mogilev</option>
+                <option value="Vitebsk">Vitebsk</option>
+                <option value="Gomel">Gomel</option>
+            </select>
+        </div>
+
+        <div class="request-block">
+            <p class="request">Please describe (at least 50 symbols on sybols) your favorite programming language <span class="required">*</span></p>
+            <label><input type="text" placeholder="Мой ответ" class="text" minlength="50"></label>
+        </div>
+
+        <div class="request-block">
+            <p class="request">What years of education did you really like? <span class="required">*</span></p>
+            <input type="checkbox" id="1" name="year" value="First">
+            <label for="1">First</label><br>
+
+            <input type="checkbox" id="2" name="year" value="Second">
+            <label for="2">Second</label><br>
+
+            <input type="checkbox" id="3" name="year" value="Third">
+            <label for="3">Third</label><br>
+
+            <input type="checkbox" id="4" name="year" value="Fourth">
+            <label for="4">Fourth</label><br>
+        </div>
+
+        <div class="request-block">
+            <p class="request">Please send any image <span class="required">*</span><br></p>
+            <label for="uploadbtn" class="upload">ДОБАВИТЬ ФАЙЛ</label>
+            <input type="file" name="upload" id="uploadbtn"><br>
+        </div>
+
+        <div class="request-block">
+            <p class="request">Set last Monday Monday <span class="required">*</span><br></p>
+            <p class="date">Дата</p>
+            <input type="date" name="image"><br>
+        </div>
+
+        <div>
+            <input type="submit" value="OТПРАВИТЬ">
+        </div>
+
+        <div class="form-footer">
+            <p>Никогда не используйте формы Google для передачи паролей.</p>
+        </div>
+
+    </form>
+</div>
+<div class="footer">
+    <p>Компания Google не имеет никакого отношения к этому контенту. <a href="#">Сообщение о нарушении</a> -
+        <a href="#"> Условия использования</a> - <a href="#"> Дополнительные условия</a></p>
+</div>
+</body>
+</html>
